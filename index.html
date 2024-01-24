@@ -6,7 +6,24 @@
     <title>Imperiali Military</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Code theme for buttons */
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            padding: 15px;
+            text-align: right;
+        }
+
+        #discord-login {
+            margin-right: 20px;
+        }
+
         .code-button {
             background-color: #2ecc71;
             color: #ffffff;
@@ -18,24 +35,32 @@
             margin-right: 10px;
         }
 
-        /* Stylish footer */
         footer {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
-        /* Credits section styling */
-        #credits {
-            text-align: center;
-            margin: 40px 0;
+        #credits,
+        #in-game-rules {
+            margin: 20px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
         }
-        #credits h2 {
+
+        #credits h2,
+        #in-game-rules h2 {
             font-size: 24px;
             margin-bottom: 10px;
         }
-        #credits p {
+
+        #credits p,
+        #in-game-rules p {
             font-size: 18px;
             margin-bottom: 5px;
         }
@@ -45,16 +70,13 @@
 
 <header>
     <div id="discord-login">
-        <!-- Discord login button -->
         <button class="code-button" onclick="authorizeWithDiscord()">Login with Discord</button>
     </div>
 </header>
 
 <main>
-    <!-- Apply for Job button redirecting to Google Form -->
     <button class="code-button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfigNvdRJ4AKfmw_2EcDcUvNRxxLdDY-HZb6eKBeH3dHytc5Q/viewform'">Apply for Job</button>
 
-    <!-- In-Game Rules for Star Wars Roleplaying -->
     <section id="in-game-rules">
         <h2>In-Game Rules for Star Wars Roleplaying</h2>
         <p>1. No random killing or team killing allowed.</p>
@@ -69,7 +91,6 @@
         <p>Owners: Banana & Awesome</p>
         <p>Developers: Leeland and Carter</p>
     </section>
-
 </main>
 
 <footer>
