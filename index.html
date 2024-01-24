@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperiali Military</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Code theme for buttons */
+        .code-button {
+            background-color: #2ecc71;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        /* Stylish footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Credits section styling */
+        #credits {
+            text-align: center;
+            margin: 40px 0;
+        }
+        #credits h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        #credits p {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div id="discord-login">
+        <!-- Discord login button -->
+        <button class="code-button" onclick="authorizeWithDiscord()">Login with Discord</button>
+    </div>
+</header>
+
+<main>
+    <!-- Apply for Job button redirecting to Google Form -->
+    <button class="code-button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfigNvdRJ4AKfmw_2EcDcUvNRxxLdDY-HZb6eKBeH3dHytc5Q/viewform'">Apply for Job</button>
+
+    <!-- In-Game Rules for Star Wars Roleplaying -->
+    <section id="in-game-rules">
+        <h2>In-Game Rules for Star Wars Roleplaying</h2>
+        <p>1. No random killing or team killing allowed.</p>
+        <p>2. Respect the lore and stay in character.</p>
+        <p>3. No metagaming or using out-of-character information in the game.</p>
+        <p>4. Follow the chain of command in roleplay scenarios.</p>
+        <p>5. Use appropriate language and behavior in the in-game chat.</p>
+    </section>
+
+    <section id="credits">
+        <h2>Credits</h2>
+        <p>Owners: Banana & Awesome</p>
+        <p>Developers: Leeland and Carter</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Follow us on social media:</p>
+    <div class="social-buttons">
+        <a href="#" target="_blank">Twitter</a>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; 2024 Imperiali Military. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
